@@ -149,7 +149,10 @@ $(document).ready(function(){
 //news tittle part
     modal.find('.news-header').text($(this).find('.news-article').text());
 //news news content part
-    modal.find('.news-article').text($(this).find('.news-content').text());
+    modal.find('.news-article').empty();
+    $(this).find('.news-content').clone().appendTo(modal.find('.news-article'));
+    $('.news-article .news-content').show();
+    console.log(modal.find('.news-article').text());
     modal.show();
     $("body").css('overflow', "hidden");
   });
