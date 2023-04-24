@@ -954,9 +954,14 @@ div.product-intro{
 	justify-content: center;
 }
 
-.profile-representative-en .profile-classify{
-	width: 147px;
+div.profile-en{
+	width: 200px;
 }
+
+.representative div{
+	width: 150px;
+  }
+
 .profile-content hr{
 	width: 100%;
 	height: 1px;
@@ -1067,6 +1072,10 @@ div.product-intro{
     align-items: flex-start;
 }
 
+.popup-inquire-detail{
+	height: 180px;
+  }
+
 .inquires .description{
 	width: 100%;
 	display: flex;
@@ -1146,7 +1155,7 @@ div.product-intro{
 	width: 100%;
 	height: 50px;
   }
-  
+
 .inquiry-purpose select {
 /*	display: none; /*hide original SELECT element:*/
 	width: 100%;
@@ -1156,6 +1165,7 @@ div.product-intro{
 	font-size: 16px;
 	font-weight: 500;
 	color: #333;
+	cursor: pointer;
 }
 
 .inquires-value input{
@@ -1313,7 +1323,7 @@ input.contact-checkbox{
 }
 
 .privacy a{
-	font-size: 12px;
+	font-size: 16px;
 	color: #333;
 	letter-spacing: 1px;
 }
@@ -1492,6 +1502,16 @@ input.contact-checkbox{
 	display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.contactus-popup-content input{
+	font-family: 'Noto Sans CJK JP';
+	font-size: 16px;
+}
+
+.contactus-popup-content textarea{
+	font-family: 'Noto Sans CJK JP';
+	font-size: 16px;
 }
 
 .contactus-popup-content hr{
@@ -1757,9 +1777,17 @@ input.contact-checkbox{
   .profile-content .last .profile-classify{
 	margin-bottom: 12px;
   }
+  
+  .profile-classify{
+	width: 90px;
+  }
+
+  div.profile-en{
+	width: 160px;
+  }
 
   .profile-value .history .title{
-	width: 18.2%;
+	width: 80px;
   }
 
   .profile-value .history .content{
@@ -1770,6 +1798,14 @@ input.contact-checkbox{
 	flex-direction: row;
   }
 
+  .profile-date-title{
+	width: 170px;
+  }
+
+  .profile-name-title{
+	width: 170px;
+  }
+
   div.profile-representative-en{
 	flex-direction: column;
   }
@@ -1778,12 +1814,16 @@ input.contact-checkbox{
 	flex-direction: row;
   }
 
-  .representative-name{
-	width: 170px;
+  div.representative-name{
+	width: 160px;
   }
 
-  .representative-value{
+  div.representative-value{
 	width: 190px;
+  }
+
+  .representative-jp div{
+	width: 120px;
   }
 
   .inquires{

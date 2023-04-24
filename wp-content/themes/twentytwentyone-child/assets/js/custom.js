@@ -271,20 +271,17 @@ $(document).ready(function(){
 
     if(valid_status == 1){
       var modal = $("#contactus-popup-overlay");
-      modal.find('.popup-inquire-qurpose').val($(".inquiry-purpose select").children("option:selected").val());
+      modal.find('.popup-inquire-purpose').val($(".inquiry-purpose select").children("option:selected").val());
       modal.find('.popup-company-name').val($("#comp-name-input").val());
       modal.find('.popup-user-name').val($("#inquiry-name").val());
       modal.find('.popup-user-email').val($("#inquiry-email").val());
+      modal.find('.popup-user-phone').val($("#inquiry-phonenumber").val());
       if($('#contact-by-phone').is(":checked")){
-        modal.find('.popup-phone-method').val($('#contact-method1').text());
-        modal.find('.popup-phone-method').show();
-        modal.find('.popup-email-method').val("");
-        modal.find('.popup-email-method').hide();
+        modal.find('.popup-contact-method').val($('#contact-method1').text());
+        modal.find('.popup-contact-method').show();
       } else{
-        modal.find('.popup-email-method').val($('#contact-method2').text());
-        modal.find('.popup-email-method').show();
-        modal.find('.popup-phone-method').val("");
-        modal.find('.popup-phone-method').hide();
+        modal.find('.popup-contact-method').val($('#contact-method2').text());
+        modal.find('.popup-contact-method').show();
       }
       modal.find('.popup-inquire-detail').val($("#inquiry-detail").val());
       modal.show();
@@ -296,6 +293,13 @@ $(document).ready(function(){
 //sending contact info
   var contactForm = $('#contactus-popup-content');
   contactForm.submit(function (event) {
+    $('#popup-inquire-purpose').prop( "disabled", false );
+    $('#popup-company-name').prop( "disabled", false );
+    $('#popup-user-name').prop( "disabled", false );
+    $('#popup-user-email').prop( "disabled", false );
+    $('#popup-user-phone').prop( "disabled", false );
+    $('#popup-contact-method').prop( "disabled", false );
+    $('#popup-inquire-detail').prop( "disabled", false );
     event.preventDefault();
     const serviceID = "service_3ovt3mh";
     const templateID = "template_jp5cmc7";
@@ -339,6 +343,13 @@ $(document).ready(function(){
         $('#contactus-verify-overlay').show();
       }
     );
+    $('#popup-inquire-purpose').prop( "disabled", true );
+    $('#popup-company-name').prop( "disabled", true );
+    $('#popup-user-name').prop( "disabled", true );
+    $('#popup-user-email').prop( "disabled", true );
+    $('#popup-user-phone').prop( "disabled", true );
+    $('#popup-contact-method').prop( "disabled", true );
+    $('#popup-inquire-detail').prop( "disabled", true );
   });
 
   $("#comp-name-input").on("input", function(){ //when the company name is input to
