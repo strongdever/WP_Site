@@ -958,7 +958,7 @@ div.profile-en{
 	width: 200px;
 }
 
-.representative div{
+.representative-jp div{
 	width: 150px;
   }
 
@@ -1014,7 +1014,7 @@ div.profile-en{
 }
 
 .representative-name{
-	width:147px;
+	width: 210px;
 	line-height: 24px;;
 }
 
@@ -2057,7 +2057,7 @@ input.contact-checkbox{
 
   .map{
 	width: 100%;
-	height: 70vw;
+	height: 170vw;
   }
 
   .contactus-popup{
