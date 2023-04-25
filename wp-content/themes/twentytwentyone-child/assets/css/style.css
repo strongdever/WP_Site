@@ -17,6 +17,10 @@ body{
 	overflow-x: hidden;
 }
 
+.margin-for-br{
+	height: 20px;
+}
+
 .header{
     position: fixed;
     width: 100%;
@@ -449,6 +453,7 @@ hr{
     height: 62px;
     font-size: 16px;
     display: flex;
+	flex-direction: column;
     align-items: center;
     justify-content: center;
     font-weight: bold;
@@ -678,7 +683,7 @@ div.product-intro{
 .window-title h3{
 	color: #26386B;
 	line-height: 24px;
-	
+	font-size: 14px;
 }
 
 .window-content{
@@ -1027,21 +1032,10 @@ div.profile-en{
 }
 
 .history .title{
-	width: 108px;
+	width: 130px;
 	font-size: 20px;
 	font-weight: Bold;
 	color: #26386B;
-	padding-top: 2px
-}
-
-.history .title::after{
-	width: 46px;
-	height: 2px;
-	content: '';
-	position: absolute;
-	left: 0;
-	top: 30px;
-	background-color: #26386B;
 }
 
 .history .content{
@@ -1080,6 +1074,7 @@ div.profile-en{
 	width: 100%;
 	display: flex;
 	align-items: flex-start;
+	flex-direction: column;
 	margin: 50px 0 20px 0;
 }
 
@@ -1137,7 +1132,6 @@ div.profile-en{
 	width: 100%;
     flex: 1;
 	box-sizing: border-box;
-	padding: 3px;
 }
 
 .inquires-content .first{
@@ -1787,7 +1781,7 @@ input.contact-checkbox{
   }
 
   .profile-value .history .title{
-	width: 80px;
+	width: 90px;
   }
 
   .profile-value .history .content{
