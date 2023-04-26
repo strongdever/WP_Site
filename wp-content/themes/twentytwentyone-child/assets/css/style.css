@@ -269,12 +269,12 @@ h4{
 }
 
 h5{
-	font-size: 20px;
-	font-weight: bold;
-	color: #333333;
-	margin: 0;
-	text-align: center;
-	line-height: 32px;
+	font-size: 16px;
+    font-weight: 500;
+    color: #333333;
+    margin: 0;
+    text-align: center;
+    line-height: 24px;
 }
 
 h6{
@@ -618,11 +618,10 @@ div.product-intro{
 }
 
 .product-content .description{
-	width: 100%;
-	text-align: left;
-	padding-top: 5px;
-	padding-bottom: 10px;
-	overflow-wrap: break-word;
+    width: 100%;
+    text-align: left;
+    padding-top: 15px;
+    overflow-wrap: break-word;
 }
 
 .product-content .number{
@@ -641,7 +640,11 @@ div.product-intro{
 	text-align: center;
 	line-height: 36px;
 	color: #26386B;
-	padding: 10px 0 10px 0;
+	padding: 60px 0 10px 0;
+}
+
+.num1 .title-Jap{
+	padding-bottom: 0;
 }
 
 .product-content .title-Eng{
@@ -649,7 +652,7 @@ div.product-intro{
 	font-weight: Bold;
 	font-size: 20px;
 	color: #26386B;
-	padding-bottom: 15px;
+	margin-bottom: 10px;
 }
 
 .product-content hr{
@@ -662,6 +665,7 @@ div.product-intro{
 .product-content img{
 	width: 100%;
 	height: auto;
+	margin: 15px 0 0 0;
 }
 
 .product-content .window-style{
@@ -672,18 +676,19 @@ div.product-intro{
     border: 2px;
     border-style: solid;
     border-color: #26386B;
+	margin-top: 15px;
 }
 
 .window-title{
-	padding: 10px 20px 10px 20px;
+	padding: 10px 20px 5px 20px;
     display: flex;
     flex-direction: row;
 }
 
 .window-title h3{
-	color: #26386B;
+	color: #333;
 	line-height: 24px;
-	font-size: 14px;
+	font-size: 16px;
 }
 
 .window-content{
@@ -695,7 +700,8 @@ div.product-intro{
 }
 
 .window-title h6{
-	color: #26386B;
+	color: #333;
+	font-size: 16px;
 }
 
 .window-content-item .sub-title{
@@ -812,6 +818,7 @@ div.product-intro{
 }
 
 .delivery-rec{
+	font-weight: 500;
 	padding: 80px 0 80px 0;
 }
 
@@ -920,6 +927,7 @@ div.product-intro{
     padding-top: 80px;
     padding-bottom: 80px;
 	background: #F5F5F5;
+	font-weight: 500;
 }
 
 .tech-info .indetail a{
@@ -938,6 +946,7 @@ div.product-intro{
 	display: flex;
     flex-direction: column;
     align-items: center;
+	font-weight: 500;
 }
 
 .profile-content{
@@ -1032,10 +1041,9 @@ div.profile-en{
 }
 
 .history .title{
-	width: 130px;
-	font-size: 20px;
-	font-weight: Bold;
-	color: #26386B;
+	width: 100px;
+    font-size: 16px;
+    color: #333;
 }
 
 .history .content{
@@ -1064,6 +1072,11 @@ div.profile-en{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+	font-weight: 500;
+}
+
+.inquires .description .margin-for-br{
+	height: 0;
 }
 
 .popup-inquire-detail{
@@ -1118,14 +1131,23 @@ div.profile-en{
 }
 
 .necessary-box{
-    width: 67px;
+    display: flex;
     height: 24px;
     color: #fff;
     font-size: 14px;
     background: #CE0000;
     border-radius: 4px;
     margin: 0 8px 0 0;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.necessary-box-jp{
+    width: 40px;
+}
+
+.necessary-box-en{
+    width: 70px;
 }
 
 .inquires-value{
