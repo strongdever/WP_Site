@@ -1940,6 +1940,10 @@ input.contact-checkbox{
 	letter-spacing: 3px;
   }
 
+  .necessary-box-en{
+	width: 80px;
+  }
+
   .header{
 	height: 70px;
 	position: fixed;
