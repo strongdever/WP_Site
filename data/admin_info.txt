@@ -1,0 +1,2 @@
+admin id: admin
+pass: 1234
